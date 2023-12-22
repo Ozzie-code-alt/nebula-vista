@@ -1,12 +1,10 @@
 
-import Header from "@/components/sub/Header";
-
-
+import MainPage from "@/pages/MainPage";
 export default function Home() {
 
   return (
     <>
-        <Header />  
+     <MainPage/>
     </>
   );
 }
