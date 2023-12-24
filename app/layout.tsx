@@ -1,9 +1,11 @@
 
 import type { Metadata } from "next";
-import { Exo_2 } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import StarsCanvas from "@/components/sub/StarBackground";
 
-const exo = Exo_2({ subsets: ["latin"] });
+
+const exo = Inter({ subsets: ["latin"] });
 
 
 export const metadata: Metadata = {
@@ -18,7 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={exo.className}>{children}</body>
+      <body className={exo.className}>
+      <StarsCanvas/>
+        {children}</body>
     </html>
 
   );
