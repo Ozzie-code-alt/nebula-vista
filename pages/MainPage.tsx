@@ -25,7 +25,7 @@ const MainPage = () => {
       <div className=" w-full h-full flex flex-row justify-center items-center">
         {/*Left Div*/}
       <div className="flex flex-col w-full justify-center items-center">
-       <div className="text-7xl text-white">
+       <div className="md:text-2xl lg:text-7xl text-white">
           Providing <br/>
           the <span>Best</span> <br/>
           Project Experience
