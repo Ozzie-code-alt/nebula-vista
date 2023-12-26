@@ -1,10 +1,11 @@
+import MainPage from "./main/page";
 
-import MainPage from "@/pages/MainPage";
+
 export default function Home() {
-
   return (
     <>
      <MainPage/>
+      
     </>
   );
 }

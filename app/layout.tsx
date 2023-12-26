@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import StarsCanvas from "@/components/sub/StarBackground";
-
+import Header from "@/components/sub/Header";
 
 const exo = Inter({ subsets: ["latin"] });
 
@@ -22,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={exo.className}>
       <StarsCanvas/>
+      <Header/>
         {children}</body>
     </html>
 
