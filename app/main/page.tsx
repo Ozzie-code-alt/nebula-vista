@@ -1,10 +1,10 @@
-"use client"
+"use client";
 import React from "react";
-import "../globals.css"
+import "../globals.css";
 import TransitionEffect from "@/components/sub/TransitionEffect";
 import Image from "next/image";
 import MainSection2 from "@/components/sections/MainSection2";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 import {
   slideInFromLeft,
   slideInFromRight,
@@ -13,48 +13,50 @@ import {
 
 const MainPage = () => {
   return (
-    <>
-    <TransitionEffect/>
-  
-    <video
-    autoPlay
-    muted
-    loop
-    className="absolute w-full h-full object-cover z-[-2]"
-    preload="true"
-    >
-      
-    <source src="/moonbg.webm"  type="video/webm"/>
-    </video>
+    <div>
+      <TransitionEffect/>
 
-      <motion.div className=" w-full h-full flex flex-row justify-center items-center">
+      <video
+        autoPlay
+        muted
+        loop
+        className="absolute w-full h-full object-cover z-[-2]"
+        preload="true"
+      >
+        <source src="/moonbg.webm" type="video/webm" />
+      </video>
+
+      <motion.div className=" w-full h-full flex flex-row justify-center items-center"
+      initial="hidden"
+      animate="visible">
         {/*Left Div*/}
-      <motion.div 
-      variants={slideInFromTop}
-      className="flex flex-col w-full justify-center items-center">
-       <div className="md:text-2xl lg:text-7xl text-white">
-          Providing <br/>
-          the <span>Best</span> <br/>
-          Project Experience
-
-       </div>
-      </motion.div>
-
-      {/*Right Div*/}
         <motion.div
-        variants={slideInFromRight(2.1)}
-        className=" flex flex-col w-full justify-center items-center">   
-        <Image 
-        src="/mainIconsdark.svg"
-        width={650}
-        height={650}
-        alt="HeroImage.png"
-        />
+          variants={slideInFromLeft(1.5)}
+          className="flex flex-col w-full justify-center items-center"
+        >
+          <div className="md:text-2xl lg:text-7xl text-white">
+            Providing <br />
+            the <span>Best</span> <br />
+            Project Experience
+          </div>
+        </motion.div>
+
+        {/*Right Div*/}
+        <motion.div
+          variants={slideInFromRight(1.5)}
+          className=" flex flex-col w-full justify-center items-center"
+        >
+          <Image
+            src="/mainIconsdark.svg"
+            width={650}
+            height={650}
+            alt="HeroImage.png"
+          />
         </motion.div>
       </motion.div>
- 
-    <MainSection2/>
-    </>
+
+      <MainSection2 />
+    </div>
   );
 };
 
