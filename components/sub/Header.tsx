@@ -15,7 +15,7 @@ import {
 
 const Header = () => {
   return (
-  <header className='shadow-lg shadow-[#2A0E61]/50 bg-indigo-300 backdrop-blur-md w-full h-14 flex flex-row justify-center items-center  text-white'>
+  <header className='shadow-lg shadow-[#ffffff]/50 bg-black backdrop-blur-md w-full h-14 flex flex-row justify-center items-center  text-white'>
     <div className='w-4/12 flex-grow px-10'>
             <h1 className='font-bold'>Justin Santos</h1>
     </div>
