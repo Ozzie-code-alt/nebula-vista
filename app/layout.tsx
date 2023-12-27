@@ -4,8 +4,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import StarsCanvas from "@/components/sub/StarBackground";
 import Header from "@/components/sub/Header";
+import { Merriweather } from "next/font/google";
 
-const exo = Inter({ subsets: ["latin"] });
+const merriweather = Merriweather({ weight:"300", preload: false});
 
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={exo.className}>
+      <body className={merriweather.className}>
       <StarsCanvas/>
       <Header/>
         {children}</body>

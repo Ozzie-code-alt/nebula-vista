@@ -15,24 +15,24 @@ import {
 
 const Header = () => {
   return (
-  <header className='shadow-lg shadow-[#ffffff]/50 bg-black backdrop-blur-md w-full h-14 flex flex-row justify-center items-center  text-white'>
+  <header className='shadow-sm shadow-[#ffffff]/50 bg-black backdrop-blur-md w-full h-14 flex flex-row justify-center items-center  text-white'>
     <div className='w-4/12 flex-grow px-10'>
             <h1 className='font-bold'>Justin Santos</h1>
     </div>
     <div className='hidden w-4/12 flex-rows gap-20 justify-center items-center pr-40 sm:flex md:pr-40'>
 
         <div className="header-item ">
-            <Link href={"/main"} className='text-2xl font-semibold'>
+            <Link href={"/main"} className='text-2xl font-light italic '>
                 Home
             </Link>
         </div>
         <div className="header-item">
-            <Link href={"/about"} className='text-2xl font-bold'>
+            <Link href={"/about"} className='text-2xl font-light italic'>
                 About
             </Link>
         </div>
         <div className="header-item">
-            <Link href={"/contacts"} className='text-2xl font-bold'>
+            <Link href={"/contacts"} className='text-2xl font-light italic'>
                Contact
             </Link>
         </div>
