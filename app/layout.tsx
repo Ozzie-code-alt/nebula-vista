@@ -24,7 +24,13 @@ export default function RootLayout({
       <body className={merriweather.className}>
       <StarsCanvas/>
       <Header/>
-        {children}</body>
+
+      <main className="relative overflow-hidden">
+        {children}
+
+      </main>
+        
+        </body>
     </html>
 
   );
