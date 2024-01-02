@@ -34,15 +34,22 @@ const MainPage = () => {
         {/*Left Div*/}
         <motion.div
           variants={slideInFromTop}
-          className="flex flex-col w-full justify-center items-center"
+          className="flex flex-col w-full justify-center items-center gap-10"
         >
           <div className="md:text-2xl lg:text-7xl  text-center text-white pr-16">
             <p className="textShadow">
-              Providing <br />
-              the <span>Best</span> <br />
+              Providing 
+              the <span>Best </span> 
               Project Experience
             </p>
           </div>
+
+          <motion.div
+          variants={slideInFromRight(1.9)}
+          className="max-w-7xl text-2xl text-center text-white pr-16">
+            <p className="textShadow ">
+            Justin Santos, a skilled web developer from the Philippines, specializes in crafting visually appealing and user-friendly websites, as showcased in his diverse and innovative portfolio.            </p>
+          </motion.div>
         </motion.div>
 
         {/*Right Div*/}
