@@ -25,7 +25,7 @@ export default function RootLayout({
       <StarsCanvas/>
       <Header/>
 
-      <main className="relative overflow-hidden">
+      <main className="overflow-hidden">
         {children}
 
       </main>
