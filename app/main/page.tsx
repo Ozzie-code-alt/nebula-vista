@@ -14,35 +14,39 @@ import {
 const MainPage = () => {
   return (
     <div>
-      <TransitionEffect/>
+      <TransitionEffect />
 
       <video
         autoPlay
         muted
         loop
-        className="absolute w-full h-full object-cover z-[-2]"
+        className="absolute w-screen h-screen object-cover z-[-2]"
         preload="true"
       >
         <source src="/moonbg.webm" type="video/webm" />
       </video>
 
-      <motion.div className=" w-full h-full flex flex-row justify-center items-center"
-      initial="hidden"
-      animate="visible">
+      <motion.div
+        className=" w-full h-screen flex flex-col justify-center items-center"
+        initial="hidden"
+        animate="visible"
+      >
         {/*Left Div*/}
         <motion.div
-          variants={slideInFromLeft(1.5)}
+          variants={slideInFromTop}
           className="flex flex-col w-full justify-center items-center"
         >
-          <div className="md:text-2xl lg:text-7xl text-white">
-            Providing <br />
-            the <span>Best</span> <br />
-            Project Experience
+          <div className="md:text-2xl lg:text-7xl  text-center text-white pr-16">
+            <p className="textShadow">
+              Providing <br />
+              the <span>Best</span> <br />
+              Project Experience
+            </p>
           </div>
         </motion.div>
 
         {/*Right Div*/}
-        <motion.div
+        {/* <motion.div
           variants={slideInFromRight(1.5)}
           className=" flex flex-col w-full justify-center items-center"
         >
@@ -52,7 +56,7 @@ const MainPage = () => {
             height={650}
             alt="HeroImage.png"
           />
-        </motion.div>
+        </motion.div> */}
       </motion.div>
 
       <MainSection2 />
