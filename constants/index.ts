@@ -20,28 +20,12 @@ title: "NextJS",
 img:"/nextjs-icon.svg"
 },
 {
-title: "Shadcn",
-img:""
-},
-{
 title: "MongoDb",
 img:"/mongodb-icon.svg"
 },
 {
-title: "Prisma",
-img:"/prisma.svg"
-},
-{
-title: "Express",
-img:"/express.svg"
-},
-{
-title: "Mongoose",
-img:""
-},
-{
-    title: "Tailwind",
-    img:"/tailwindcss-icon.svg"
+title: "Tailwind",
+img:"/tailwindcss-icon.svg"
     },
 ]
 
@@ -61,5 +45,20 @@ img:"/meta-icon.svg"
 {
 title: "Unity",
 img:"/unity.svg"
-}
+},
+{
+title: "Prisma",
+img:"/prisma.svg"
+},
+{
+title: "Express",
+img:"/express.svg"
+},
+{
+title: "Mongoose",
+img:""
+},{
+    title: "Astro",
+    img:"/astro-icon.svg"
+    },
 ]

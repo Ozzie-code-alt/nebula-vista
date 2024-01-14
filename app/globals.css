@@ -79,3 +79,58 @@ body{
   background-color: black;
   overflow-x: hidden;
 }
+
+.slider{
+  place-items: center;
+  padding: 100px;
+  margin: auto;
+  height: 350px;
+  width: 90;
+  display: grid;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(100deg, rgba(20,21,31,1) 40%, rgba(20,21,31,0) 64%, rgba(41,42,55,1) 94%);
+}
+
+.slide-track{
+  display: flex;
+  width: calc(250px * 18);
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px * 9));
+  }
+}
+.slide{
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+
+img{
+  width: 100%;
+  transition: transform 1s;
+  padding-left: 60px;
+}
+
+img:hover{
+  transform: translateZ(20px);
+}
+
+.slider::before{
+  left: 0;
+  top: 0;
+}
+.slider::after{
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
