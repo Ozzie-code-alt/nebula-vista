@@ -14,12 +14,12 @@ const Cube = () => {
         mesh.current.rotation.z += delta * 0.25
     })
     
-const textture_1 = useLoader(TextureLoader, "/assets/justin.webp")
-const textture_2 = useLoader(TextureLoader, "/assets/joel.webp")
-const textture_3 = useLoader(TextureLoader, "/assets/kent.webp")
-const textture_4 = useLoader(TextureLoader, "/assets/sean.webp")
-const textture_5 = useLoader(TextureLoader, "/assets/justin.webp")
-const textture_6 = useLoader(TextureLoader, "/assets/joel.webp")
+const textture_1 = useLoader(TextureLoader, "/meta-icon.svg")
+const textture_2 = useLoader(TextureLoader, "/html-5.svg")
+const textture_3 = useLoader(TextureLoader, "/javascript.svg")
+const textture_4 = useLoader(TextureLoader, "/nextjs-icon.svg")
+const textture_5 = useLoader(TextureLoader, "/tailwindcss-icon.svg")
+const textture_6 = useLoader(TextureLoader, "/unity.svg")
   return (
     <mesh ref={mesh}>
       <boxGeometry args={[2.5, 2.5, 2.5]} />

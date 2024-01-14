@@ -24,7 +24,6 @@ export default function RootLayout({
       <body className={merriweather.className}>
       <StarsCanvas/>
       <Header/>
-
       <main className="overflow-hidden">
         {children}
 

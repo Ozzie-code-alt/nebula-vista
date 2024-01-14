@@ -15,7 +15,6 @@ const MainPage = () => {
   return (
     <div>
       <TransitionEffect />
-
       <video
         autoPlay
         muted
@@ -27,7 +26,7 @@ const MainPage = () => {
       </video>
 
       <motion.div
-        className=" w-full h-screen flex flex-col justify-center items-center"
+        className="w-full h-screen flex flex-col justify-center items-center"
         initial="hidden"
         animate="visible"
       >
