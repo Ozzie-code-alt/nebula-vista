@@ -2,9 +2,8 @@ import React from "react";
 
 const Carousel = () => {
   return (
-    <div className="slider">
-      <div className="slide-track">
-    
+    <div className="slider  ">
+      <div className="slide-track bg-white/50 flex gap-20 justify-center items-center">
         <div>
           <img src="/html-5.svg" alt="TechPic" />
         </div>
@@ -78,10 +77,6 @@ const Carousel = () => {
         <div>
           <img src="/unity.svg" alt="TechPic" />
         </div>
-
-
-
-
 
         </div>
 

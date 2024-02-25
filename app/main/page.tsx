@@ -10,6 +10,7 @@ import {
   slideInFromRight,
   slideInFromTop,
 } from "@/utils/motion";
+import MainSection3 from "@/components/sections/MainSection3";
 
 const MainPage = () => {
   return (
@@ -66,6 +67,7 @@ const MainPage = () => {
       </motion.div>
 
       <MainSection2 />
+      <MainSection3/>
     </div>
   );
 };
