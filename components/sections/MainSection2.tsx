@@ -17,7 +17,7 @@ const MainSection2 = () => {
       </div>
 
  {/**Infinite Cartousel */}
-    <div className="w-full flex justify-center items-center h-auto ">
+    <div className="w-full flex justify-center items-center h-auto  ">
         <Carousel/>
     </div>
 
