@@ -1,6 +1,5 @@
 import React from "react";
 import Index from "../sub/Cube";
-import { WebTechStacks, mobileArtech } from "@/constants";
 import Carousel from "../sub/Carousel";
 
 const MainSection2 = () => {
